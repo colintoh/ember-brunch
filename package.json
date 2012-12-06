@@ -1,0 +1,30 @@
+{
+  "author": "Your Name",
+  "name": "package-name",
+  "description": "Package description",
+  "version": "0.0.1",
+  "homepage": "",
+  "repository": {
+	"type": "git",
+	"url": ""
+  },
+  "engines": {
+	"node": "~0.6.10 || 0.8 || 0.9"
+  },
+  "scripts": {
+	"start": "brunch watch --server",
+	"test": "brunch test"
+  },
+  "dependencies": {
+	"javascript-brunch": ">= 1.0 < 1.5",
+  "stylus-brunch": "git+ssh://git@github.com:brunch/stylus-brunch.git",
+	"css-brunch": ">= 1.0 < 1.5",
+  "ember-handlebars-brunch": "git://github.com/icholy/ember-handlebars-brunch.git",
+	"uglify-js-brunch": ">= 1.0 < 1.5",
+	"clean-css-brunch": ">= 1.0 < 1.5",
+  "jshint-brunch": "git+ssh://git@github.com:brunch/jshint-brunch.git",
+  "auto-reload-brunch": "git+ssh://git@github.com:brunch/auto-reload-brunch.git"
+  },
+  "devDependencies": {
+  }
+}
