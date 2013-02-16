@@ -19,11 +19,11 @@
 	"javascript-brunch": ">= 1.0 < 1.5",
   "stylus-brunch": "git+ssh://git@github.com:brunch/stylus-brunch.git",
 	"css-brunch": ">= 1.0 < 1.5",
-  "ember-handlebars-brunch": "git://github.com/icholy/ember-handlebars-brunch.git",
+  "ember-precompiler-brunch": "1.5.1",
 	"uglify-js-brunch": ">= 1.0 < 1.5",
 	"clean-css-brunch": ">= 1.0 < 1.5",
   "jshint-brunch": "git+ssh://git@github.com:brunch/jshint-brunch.git",
-  "auto-reload-brunch": "git+ssh://git@github.com:brunch/auto-reload-brunch.git"
+  "auto-reload-brunch": "<=1.5"
   },
   "devDependencies": {
   }

@@ -33,6 +33,10 @@ exports.config =
       root: 'templates'
       defaultExtension: 'hbs'
       joinTo: 'javascripts/app.js' : /^app/
+      paths:
+        jquery:'vendor/scripts/jquery-1.8.0.min.js'
+        handlebars:'vendor/scripts/handlebars-1.0.rc.2.js'
+        ember: 'vendor/scripts/ember-latest.js'
 
   server:
     port: 3333
