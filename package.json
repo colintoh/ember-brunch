@@ -17,12 +17,12 @@
   },
   "dependencies": {
 	"javascript-brunch": ">= 1.0 < 1.5",
-  "stylus-brunch": "git+ssh://git@github.com:brunch/stylus-brunch.git",
+  "stylus-brunch": "1.5.1",
 	"css-brunch": ">= 1.0 < 1.5",
   "ember-precompiler-brunch": "1.5.1",
 	"uglify-js-brunch": ">= 1.0 < 1.5",
 	"clean-css-brunch": ">= 1.0 < 1.5",
-  "jshint-brunch": "git+ssh://git@github.com:brunch/jshint-brunch.git",
+  "jshint-brunch": "1.5.1",
   "auto-reload-brunch": "<=1.5"
   },
   "devDependencies": {
