@@ -4,7 +4,7 @@ Ember-Brunch Bootstrap
 Dependencies:
     
   - Install Node.js: http://nodejs.org/download/
-  - Install Brunch: ``` npm install -g brunch```
+  - Install the latest Brunch(>=1.7.0): ``` npm install -g brunch```
   - Install command line tool from XCode
   - Install scaffolt if you want to use generator: *(Optional but highly recommended)* ``` npm install -g scaffolt```
 
