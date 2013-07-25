@@ -1,9 +1,7 @@
 window.App = require('app');
 
-require('templates/application');
-require('templates/home');
-require('templates/nextpage');
 
+require('template')
 require('helper');
 require('router');
 
