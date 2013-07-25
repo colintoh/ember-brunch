@@ -12,10 +12,10 @@ Get Started
 ===========
 
 Create a new app with the skeleton:
-```brunch new [appname] -s https://github.com/colintoh/ember-brunch-2359```
+```brunch new https://github.com/colintoh/ember-brunch-2359 [appname] ```
 
 Start the server and watch:
-``` brunch watch -s```
+```cd [appname] && brunch watch -s```
 
 File Structure
 ==============
