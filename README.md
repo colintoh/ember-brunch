@@ -1,6 +1,23 @@
-Project Name
+Ember-Brunch Bootstrap
 ============
 
-Here, you can include details about what your project is and how it is
-supposed to be used.
+Dependencies:
+    
+  - Install Node.js: http://nodejs.org/download/
+  - Install Brunch: ``` npm install -g brunch```
+  - Install command line tool from XCode
+  - Install scaffolt if you want to use generator: *(Optional but highly recommended)* ``` npm install -g scaffolt```
 
+Get Started
+===========
+
+Create a new app with the skeleton:
+```brunch new [appname] -s https://github.com/colintoh/ember-brunch-2359```
+
+Start the server and watch:
+``` brunch watch -s```
+
+File Structure
+==============
+
+TBC....
