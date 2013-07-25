@@ -8,7 +8,7 @@ Dependencies:
   - Install command line tool from XCode
   - Install scaffolt if you want to use generator: *(Optional but highly recommended)* ``` npm install -g scaffolt```
 
-Get Started
+Getting Started
 ===========
 
 Create a new app with the skeleton:
@@ -28,7 +28,8 @@ Generate scaffold
 ==================
 Without generators, you will have to manually type in alot of repetitive code. With the node module ```scaffolt```, you can easily generate controllers, views and template files and append them to the ```templates.js``` and ```helper.js``` files. 
 
-Typing ```scaffolt class recipe``` in your terminal will generate:
+Let's create a **recipe** controller, view and template with the **class** generator.
+Inside your application root directory, type ```scaffolt class recipe``` in your terminal. This will generate:
     
     // Inside helper/recipe.js
     
