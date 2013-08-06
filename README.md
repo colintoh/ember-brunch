@@ -49,7 +49,7 @@ and a template call *recipe.hbs* in the ```template``` folder:
 
     The name of the template: recipe
     
-In your ```router.js``` file, append your recipe route:
+In your ```router.js``` file, manually append your recipe route:
 
     App.Router.map(function(){
         this.route('index',{path:'/'});
