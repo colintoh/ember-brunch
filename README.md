@@ -1,5 +1,15 @@
-Ember-Brunch Bootstrap
+Ember-Brunch
 ============
+
+Ember-Brunch embodies [modern web development flow](http://www.youtube.com/watch?v=vDbbz-BdyYc) with the help of brunch.io and the ember.js framework. With Ember-Brunch, you can:
+
+- Organize your javascript files into modules. 
+- Import modules into local scope and prevent them from polluting the global scope.
+- Ember provides a MVC structure for your front-end development
+- Automatically JS-hint your files when you save them.
+- Brunch provides all sort of preprocessors: LESS, STYLUS, JADE, TYPESCRIPT etc...
+- Build a production-ready app with just a single command and be ready to deploy.
+
 
 Dependencies:
     
@@ -16,6 +26,13 @@ Create a new app with the skeleton:
 
 Start the server and watch:
 ```cd [appname] && brunch watch -s```
+
+Deployment
+===========
+Build a production folder:
+```brunch build -o```
+
+Your app will be compiled and minified into the  ```public``` folder. Upload that folder to any host(S3 etc) and you are done!
 
 File Structure
 ==============
