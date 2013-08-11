@@ -1,13 +1,19 @@
 Ember-Brunch
 ============
 
-Ember-Brunch embodies [modern web development flow](http://www.youtube.com/watch?v=vDbbz-BdyYc) with the help of brunch.io and the ember.js framework. With Ember-Brunch, you can:
+Ember-Brunch embodies [modern web development workflow](http://www.youtube.com/watch?v=vDbbz-BdyYc) with the help of brunch.io and the ember.js framework. Having a awesome development workflow is important because you want to:
+
+- ***Reduce*** development time.
+- ***Reduce*** bugs.
+- ***Reduce*** unneccessary premature hairloss.
+
+What ***Ember-Brunch*** can do for you:
 
 - Organize your javascript files into modules. 
-- Import modules into local scope and prevent them from polluting the global scope.
-- Ember provides a MVC structure for your front-end development
-- Automatically JS-hint your files when you save them.
-- Brunch provides all sort of preprocessors: LESS, STYLUS, JADE, TYPESCRIPT etc...
+- Prevent pollution of the global scope.
+- Front-end MVC framework.
+- Auto-detect and prompt JS errors the very moment you save the files.
+- A buffet selection of preprocessors to save development time: LESS, STYLUS, JADE, TYPESCRIPT etc...
 - Build a production-ready app with just a single command and be ready to deploy.
 
 
@@ -76,3 +82,15 @@ In your ```router.js``` file, manually append your recipe route:
     });
     
 Enter ```localhost:[port-number]/#/recipe``` and you will see your new changes.
+
+
+Want to know more about Brunch and Ember?
+=================================
+
+[Brunch.io](http://brunch.io/)
+
+Brunch is an assembler for HTML5 applications. It is a simple but powerful build process and pipeline. It’s agnostic to frameworks, libraries, programming, stylesheet & templating languages and backend technology.
+
+[Ember JS](http://emberjs.com/)
+
+A framework for creating ambitious web applications.
