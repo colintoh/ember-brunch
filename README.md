@@ -20,7 +20,7 @@ What ***Ember-Brunch*** can do for you:
 Dependencies:
     
   - Install Node.js: http://nodejs.org/download/
-  - Install the latest Brunch(>=1.7.0): ``` npm install -g brunch```
+  - Install Brunch 1.7.0 (The latest 1.7.1 breaks the build) : ``` npm install -g brunch@1.7.0```
   - Install command line tool from XCode
   - Install scaffolt if you want to use generator: *(Optional but highly recommended)* ``` npm install -g scaffolt```
 
