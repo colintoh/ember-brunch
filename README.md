@@ -13,6 +13,7 @@ What ***Ember-Brunch*** can do for you:
 - Prevent pollution of the global scope.
 - Front-end MVC framework.
 - Auto-detect and prompt JS errors the very moment you save the files.
+- Auto-reload the browser everytime you save the files.
 - A buffet selection of preprocessors to save development time: LESS, STYLUS, JADE, TYPESCRIPT etc...
 - Build a production-ready app with just a single command and be ready to deploy.
 
