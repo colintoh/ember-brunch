@@ -3,17 +3,17 @@ path = require 'path'
 
 # See docs at http://brunch.readthedocs.org/en/latest/config.html.
 
-exports.config = 
+exports.config =
 
-  files: 
-    
-    javascripts: 
+  files:
+
+    javascripts:
       defaultExtension: 'js',
-      joinTo: 
+      joinTo:
         'javascripts/app.js': /^app/
         'javascripts/vendor.js': /^vendor/
 
-      order: 
+      order:
         before: [
           'vendor/scripts/console-helper.js',
           'vendor/scripts/jquery-1.8.0.min.js',
@@ -37,6 +37,9 @@ exports.config =
         jquery:'vendor/scripts/jquery-1.8.0.min.js'
         handlebars:'vendor/scripts/handlebars-1.0.rc.2.js'
         ember: 'vendor/scripts/ember-latest.js'
+
+   conventions:
+      ignored: -> false
 
   server:
     port: 3333
