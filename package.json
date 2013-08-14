@@ -1,29 +1,29 @@
 {
-  "author": "Your Name",
-  "name": "package-name",
-  "description": "Package description",
-  "version": "0.0.1",
-  "homepage": "",
+  "author": "Colin Toh",
+  "name": "Ember-Brunch",
+  "description": "Start building production-ready Ember app today with Ember-Brunch.",
+  "version": "0.1",
+  "homepage": "https://github.com/colintoh/ember-brunch",
   "repository": {
 	"type": "git",
-	"url": ""
+	"url": "https://github.com/colintoh/ember-brunch"
   },
   "engines": {
-	"node": "~0.6.10 || 0.8 || 0.9"
+  	"node": "~0.6.10 || 0.8 || 0.9"
   },
   "scripts": {
-	"start": "brunch watch --server",
-	"test": "brunch test"
+  	"start": "brunch watch --server",
+  	"test": "brunch test"
   },
   "dependencies": {
-	"javascript-brunch": ">= 1.0 < 1.5",
-  "stylus-brunch": "1.5.1",
-	"css-brunch": ">= 1.0 < 1.5",
-  "ember-precompiler-brunch": "1.5.1",
-	"uglify-js-brunch": ">= 1.0 < 1.5",
-	"clean-css-brunch": ">= 1.0 < 1.5",
-  "jshint-brunch": "1.5.1",
-  "auto-reload-brunch": "<=1.5"
+  	"javascript-brunch": ">= 1.0 < 1.5",
+    "stylus-brunch": "1.5.1",
+  	"css-brunch": ">= 1.0 < 1.5",
+    "ember-precompiler-brunch": "1.5.1",
+  	"uglify-js-brunch": ">= 1.0 < 1.5",
+  	"clean-css-brunch": ">= 1.0 < 1.5",
+    "jshint-brunch": "1.5.1",
+    "auto-reload-brunch": "<=1.5"
   },
   "devDependencies": {
   }
