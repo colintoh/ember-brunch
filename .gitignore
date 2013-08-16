@@ -14,5 +14,7 @@ pids
 logs
 results
 
+aws.json
+
 node_modules
 npm-debug.log
