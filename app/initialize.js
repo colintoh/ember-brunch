@@ -1,7 +1,7 @@
 window.App = require('app');
 
 
-require('template')
+require('template');
 require('helper');
 require('router');
 

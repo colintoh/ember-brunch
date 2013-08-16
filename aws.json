@@ -1,0 +1,12 @@
+/*******************
+* Danger!!!!!
+* Don't ever commit this files with your credential.
+*******************/
+
+
+{
+	"key": "ACCESS_KEY",
+    "secret": "SECRET",
+    "bucket": "BUCKET_NAME",
+    "access": "public-read"
+}
