@@ -22,7 +22,7 @@
     "ember-handlebars-brunch": "git+ssh://git@github.com:bartsqueezy/ember-handlebars-brunch.git",
   	"uglify-js-brunch": ">= 1.0 < 1.5",
   	"clean-css-brunch": ">= 1.0 < 1.5",
-    "jshint-brunch": "1.5.1",
+    "jshint-brunch": "1.6.0",
     "auto-reload-brunch": "<=1.5"
   },
   "devDependencies": {
