@@ -34,12 +34,19 @@ Create a new app with the skeleton:
 Start the server and watch:
 ```cd [appname] && brunch watch -s```
 
-Deployment
+Deployment(New)
 ===========
 Build a production folder:
 ```brunch build -o```
 
 Your app will be compiled and minified into the  ```public``` folder. Upload that folder to any host(S3 etc) and you are done!
+
+Or let ***GRUNT*** do both together for you!
+
+1. Install grunt-cli: ```npm install -g grunt-cli```
+2. Create a bucket at S3 and set it as static web server.
+3. Fill up aws.json with your credentials.
+4. In your root directory, run ```grunt deploy``` and your code will be live on your S3's url. :)
 
 File Structure
 ==============
