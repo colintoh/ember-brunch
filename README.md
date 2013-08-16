@@ -43,6 +43,7 @@ Your app will be compiled and minified into the  ```public``` folder. Upload tha
 
 Or let ***GRUNT*** do both together for you!
 
+### S3 deployment
 1. Install grunt-cli: ```npm install -g grunt-cli```
 2. Create a bucket at S3 and set it as static web server.
 3. Fill up aws.json with your credentials.
