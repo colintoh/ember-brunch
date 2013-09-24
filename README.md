@@ -9,7 +9,7 @@ Ember-Brunch embodies [modern web development workflow](http://www.youtube.com/w
 
 What ***Ember-Brunch*** can do for you:
 
-- Organize your javascript files into modules. 
+- Organize your javascript files into modules.
 - Prevent pollution of the global scope.
 - Front-end MVC framework.
 - Auto-detect and prompt JS errors the very moment you save the files.
@@ -19,7 +19,7 @@ What ***Ember-Brunch*** can do for you:
 
 
 Dependencies:
-    
+
   - Install Node.js: http://nodejs.org/download/
   - Install Brunch 1.7.0 (The latest 1.7.1 breaks the build) : ``` npm install -g brunch@1.7.0```
   - Install command line tool from XCode
@@ -43,7 +43,7 @@ Your app will be compiled and minified into the  ```public``` folder. Upload tha
 
 Or let ***GRUNT*** do both together for you!
 
-### S3 deployment
+### S3 deployment (Do not use, will update with latest version)
 1. Install grunt-cli: ```npm install -g grunt-cli```
 2. Create a bucket at S3 and set it as static web server.
 3. Fill up aws.json with your credentials.
@@ -58,20 +58,20 @@ The ```app``` folder stores all file that you will need to start the project. ``
 
 Generate scaffold
 ==================
-Without generators, you will have to manually type in alot of repetitive code. With the node module ```scaffolt```, you can easily generate controllers, views and template files and append them to the ```templates.js``` and ```helper.js``` files. 
+Without generators, you will have to manually type in alot of repetitive code. With the node module ```scaffolt```, you can easily generate controllers, views and template files and append them to the ```templates.js``` and ```helper.js``` files.
 
 Let's create a **recipe** controller, view and template with the **class** generator.
 Inside your application root directory, type ```scaffolt class recipe``` in your terminal. This will generate:
-    
+
     // Inside helper/recipe.js
-    
+
     var App = require('app');
 
     App.RecipeController = Em.Controller.extend({
-    
+
     });
-    
-    
+
+
     App.RecipeView = Em.View.extend({
         didInsertElement: function(){
       }
@@ -80,7 +80,7 @@ Inside your application root directory, type ```scaffolt class recipe``` in your
 and a template call *recipe.hbs* in the ```template``` folder:
 
     The name of the template: recipe
-    
+
 In your ```router.js``` file, manually append your recipe route:
 
     App.Router.map(function(){
@@ -89,7 +89,7 @@ In your ```router.js``` file, manually append your recipe route:
         this.route('nextpage');
         this.route('recipe'); <--------- Insert this line
     });
-    
+
 Enter ```localhost:[port-number]/#/recipe``` and you will see your new changes.
 
 

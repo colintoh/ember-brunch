@@ -19,13 +19,12 @@
     "javascript-brunch": ">= 1.0 < 1.5",
     "stylus-brunch": "1.5.1",
     "css-brunch": ">= 1.0 < 1.5",
-    "ember-handlebars-brunch": "git+ssh://git@github.com:bartsqueezy/ember-handlebars-brunch.git",
+    "ember-handlebars-brunch": "1.0.0",
     "uglify-js-brunch": ">= 1.0 < 1.5",
     "clean-css-brunch": ">= 1.0 < 1.5",
     "jshint-brunch": "1.6.0",
     "auto-reload-brunch": "<=1.5",
     "grunt": "~0.4.1",
-    "grunt-s3": "~0.2.0-alpha.2",
     "grunt-exec": "~0.4.2"
   },
   "devDependencies": {}
