@@ -16,16 +16,21 @@
     "test": "brunch test"
   },
   "dependencies": {
-    "javascript-brunch": ">= 1.0 < 1.5",
-    "stylus-brunch": "1.5.1",
-    "css-brunch": ">= 1.0 < 1.5",
+    "javascript-brunch": "~1.7.0",
+    "stylus-brunch": "1.6.1",
+    "css-brunch": ">= 1.0 < 1.8",
     "ember-handlebars-brunch": "1.0.0",
-    "uglify-js-brunch": ">= 1.0 < 1.5",
-    "clean-css-brunch": ">= 1.0 < 1.5",
-    "jshint-brunch": "1.6.0",
+    "uglify-js-brunch": "~1.7.3",
+    "imageoptmizer-brunch": "0.0.4",
+    "clean-css-brunch": "~1.7.1",
+    "jshint-brunch": "1.5.1",
     "auto-reload-brunch": "<=1.5",
-    "grunt": "~0.4.1",
-    "grunt-exec": "~0.4.2"
+    "grunt-groundskeeper": "~0.1.6",
+    "grunt-cli": "0.1.11",
+    "grunt-exec": "~0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-compress": "~0.5.2",
+    "grunt-contrib-rename": "0.0.3"
   },
   "devDependencies": {}
 }
