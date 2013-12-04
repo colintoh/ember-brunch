@@ -2,58 +2,65 @@ module.exports = function (grunt) {
 
 
   // Get path to core grunt dependencies from Sails
-  grunt.loadNpmTasks('grunt-s3');
   grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-groundskeeper');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-compress');
+  grunt.loadNpmTasks('grunt-contrib-rename');
 
 
   // Project configuration.
   grunt.initConfig({
-    aws: grunt.file.readJSON('aws.json'),
-    s3: {
-      options: {
-        key: '<%= aws.key %>',
-        secret: '<%= aws.secret %>',
-        bucket: '<%= aws.bucket %>',
-        access: '<%= aws.access %>'
-      },
-      dev:{
+    clean :["public/images"],
+    compress: {
+      main: {
         options: {
-          encodePaths: true,
-          maxOperations: 20
+          mode: 'gzip'
         },
-        upload: [{
-            // Wildcards are valid *for uploads only* until I figure out a good implementation
-            // for downloads.
-            src: 'public/javascripts/*',
-
-            // But if you use wildcards, make sure your destination is a directory.
-            dest: './javascripts/'
-          },{
-            // Wildcards are valid *for uploads only* until I figure out a good implementation
-            // for downloads.
-            src: 'public/stylesheets/*',
-
-            // But if you use wildcards, make sure your destination is a directory.
-            dest: './stylesheets/'
-          },{
-            // Wildcards are valid *for uploads only* until I figure out a good implementation
-            // for downloads.
-            src: 'public/*',
-
-            // But if you use wildcards, make sure your destination is a directory.
-            dest: './'
-          }
-
-        ]
+        expand: true,
+        src: ['public/javascripts/vendor.js','public/javascripts/app.js','public/stylesheets/app.css'],
+      }
+    },
+    rename: {
+      main: {
+        files: [
+            {src: ['public/javascripts/vendor.js'], dest: 'public/javascripts/vendor.unzip.js'},
+            {src: ['public/javascripts/vendor.js.gz'], dest: 'public/javascripts/vendor.js'},
+            {src: ['public/javascripts/app.js'], dest: 'public/javascripts/app.unzip.js'},
+            {src: ['public/javascripts/app.js.gz'], dest: 'public/javascripts/app.js'},
+            {src: ['public/stylesheets/app.css'], dest: 'public/stylesheets/app.unzip.css'},
+            {src: ['public/stylesheets/app.css.gz'], dest: 'public/stylesheets/app.css'}
+            ]
       }
     },
     exec: {
-      brunch_build: {
-          command: 'brunch build -o'
+      brunchBuild: {
+        command: 'brunch b'
+      },
+      brunchBuildOptimize: {
+        command: 'brunch b -P'
+      }
+    },
+    groundskeeper: {
+      compile: {
+        files: {
+          "public/javascripts/app.js": "public/javascripts/app.js"
+        },
+        options: {
+          console: false,
+          replace: "'0'"
         }
       }
+    }
   });
 
-  grunt.registerTask('deploy',['exec','s3']);
+  grunt.registerTask('production',[
+    'clean',
+    'exec:brunchBuildOptimize',
+    'groundskeeper',
+    'groundskeeper',
+    'compress',
+    'rename'
+  ]);
 
 };
