@@ -21,7 +21,7 @@ What ***Ember-Brunch*** can do for you:
 Dependencies:
 
   - Install Node.js: http://nodejs.org/download/
-  - Install Brunch 1.7.0 (The latest 1.7.1 breaks the build) : ``` npm install -g brunch@1.7.0```
+  - Install Brunch 1.7.10 : ``` npm install -g brunch@1.7.10```
   - Install command line tool from XCode
   - Install scaffolt if you want to use generator: *(Optional but highly recommended)* ``` npm install -g scaffolt```
 
@@ -34,20 +34,25 @@ Create a new app with the skeleton:
 Start the server and watch:
 ```cd [appname] && brunch watch -s```
 
-Deployment(New)
+Building
+========
+Build a non-optimized version:
+```brunch b```
+
+Build and optimized(minify):
+```brunch b -P```
+
+Build + optimized + gzip:
+```grunt production```
+
+
+Deployment
 ===========
 Build a production folder:
-```brunch build -o```
+```brunch b -P```
 
 Your app will be compiled and minified into the  ```public``` folder. Upload that folder to any host(S3 etc) and you are done!
 
-Or let ***GRUNT*** do both together for you!
-
-### S3 deployment (Do not use, will update with latest version)
-1. Install grunt-cli: ```npm install -g grunt-cli```
-2. Create a bucket at S3 and set it as static web server.
-3. Fill up aws.json with your credentials.
-4. In your root directory, run ```grunt deploy``` and your code will be live on your S3's url. :)
 
 File Structure
 ==============
