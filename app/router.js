@@ -12,3 +12,7 @@ App.Router.map(function(){
     this.route('home');
     this.route('nextpage');
 });
+
+App.Router.reopen({
+	location: 'auto'
+});
