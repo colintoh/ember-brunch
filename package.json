@@ -16,6 +16,7 @@
     "test": "brunch test"
   },
   "dependencies": {
+    "express": "^4.5.1",
     "javascript-brunch": "~1.7.0",
     "stylus-brunch": "1.6.1",
     "css-brunch": ">= 1.0 < 1.8",

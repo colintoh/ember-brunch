@@ -3,10 +3,7 @@ var express = require('express'),
     port = process.env.PORT || 8080,
     app = express();
 
-app.configure(function() {
-  app.use(express.static(__dirname + '/public'));
-});
-
+app.use(express.static(__dirname + '/public'));
 
 exports.startServer = function(port,path,callback){
 	app.get('*', function(request, response){
