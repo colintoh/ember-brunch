@@ -53,6 +53,19 @@ Build a production folder:
 
 Your app will be compiled and minified into the  ```public``` folder. Upload that folder to any host(S3 etc) and you are done!
 
+#Need a server?
+Go to ```config.coffee``` and switch on the server by setting ```run: yes```. It will run a express server. Set your port number accordingly.
+
+#Autolocation
+
+Autolocation is switched on by default in ```app > router.js```. Ember.Autolocation will detect your browser support and switch your URL appearance.
+
+Modern browser will render ```localhost:3333/home``` instead of ```localhost:3333/#/home```.
+
+The only problem with this pretty url is that once user bookmark and visit this page again, the page will not exist because there is no actual ```Home``` resource. To solve this, you will need to run a server and redirect them to the root path. Read ```server.js``` to find out more.
+
+More Info here: [Ember.Autolocation](http://emberjs.com/api/classes/Ember.AutoLocation.html)
+
 
 File Structure
 ==============
