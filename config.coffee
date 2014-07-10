@@ -41,11 +41,12 @@ exports.config =
   conventions:
     ignored: -> false
 
+  server:
+    path: 'server.js'
+    port: 3333
+    base: '/'
+    run: yes
+
   plugins:
     jshint:
       pattern: /^app\/.*\.js$/
-
-  server:
-    port: 3333
-    base: '/'
-    run: no
