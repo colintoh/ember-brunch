@@ -16,8 +16,8 @@ exports.config =
       order:
         before: [
           'vendor/scripts/console-helper.js',
-          'vendor/scripts/jquery-1.9.1.js',
-          'vendor/scripts/handlebars-1.0.js',
+          'vendor/scripts/jquery-latest.js',
+          'vendor/scripts/handlebars-latest.js',
           'vendor/scripts/ember-latest.js',
           'vendor/scripts/bootstrap.js',
           ]
@@ -33,6 +33,10 @@ exports.config =
       root: 'templates'
       defaultExtension: 'hbs'
       joinTo: 'javascripts/app.js' : /^app/
+      paths:
+      	jquery: 'vendor/scripts/jquery-latest.js'
+      	handlebars: 'vendor/scripts/handlebars-latest.js'
+      	ember: 'vendor/scripts/ember-latest.js'
 
   conventions:
     ignored: -> false
