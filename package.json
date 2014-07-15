@@ -23,7 +23,6 @@
     "css-brunch": ">= 1.0 < 1.8",
     "ember-precompiler-brunch": "1.5.1",
     "uglify-js-brunch": "~1.7.3",
-    "imageoptmizer-brunch": "0.0.4",
     "clean-css-brunch": "~1.7.1",
     "jshint-brunch": "1.5.1",
     "auto-reload-brunch": "<=1.5",
