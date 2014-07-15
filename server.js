@@ -16,3 +16,5 @@ exports.startServer = function(port,path,callback){
 	app.listen(port);
 	console.log("Server started on port " + port);
 }
+
+console.log(typeof require.main);
