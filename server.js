@@ -16,5 +16,5 @@ exports.startServer = function(port,path,callback){
 }
 
 if( process.env.PORT ){
-	exports.startServer();
+	exports.startServer(process.env.PORT);
 }
