@@ -17,6 +17,7 @@
   },
   "dependencies": {
   	"brunch":"1.7.14",
+  	"express": "4.6.1",
     "javascript-brunch": "~1.7.0",
     "stylus-brunch": "1.6.1",
     "css-brunch": ">= 1.0 < 1.8",
