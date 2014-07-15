@@ -9,11 +9,11 @@
     "url": "https://github.com/colintoh/ember-brunch"
   },
   "engines": {
-    "node": "~0.6.10 || 0.8 || 0.9"
+    "node": "~0.11.9"
   },
   "scripts": {
-    "start": "brunch watch --server",
-    "test": "brunch test"
+    "start": "node server",
+    "postinstall": "./node_modules/brunch/bin/brunch build -P"
   },
   "dependencies": {
   	"brunch":"1.7.14",
