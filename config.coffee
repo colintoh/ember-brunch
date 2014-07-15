@@ -5,9 +5,6 @@ path = require 'path'
 
 exports.config =
 
-  paths:
-  	watched: ['app']
-
   files:
 
     javascripts:

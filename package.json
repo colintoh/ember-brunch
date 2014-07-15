@@ -13,7 +13,7 @@
     "npm":"1.1.x"
   },
   "scripts": {
-	"postinstall": "brunch build -P"
+	"postinstall": "brunch build --production"
   },
   "dependencies": {
   	"brunch": "*",
