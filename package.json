@@ -14,7 +14,7 @@
   "scripts": {
     "start": "brunch watch --server",
     "test": "brunch test",
-    "postinstall":" brunch watch -s"
+    "postinstall":" brunch build -P"
   },
   "dependencies": {
   	"brunch":"1.7.14",
