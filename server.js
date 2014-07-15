@@ -16,11 +16,5 @@ exports.startServer = function(port,path,callback){
 }
 
 if( process.env.PORT ){
-	app.get('*', function(request, response){
-	  response.sendfile('./public/index.html');
-	});
-
-	app.listen(port, function(){
-		console.log("Server started on port " + port);
-	});
+	exports.startServer();
 }

@@ -45,7 +45,7 @@ exports.config =
     path: 'server.js'
     port: process.env.PORT || 3333
     base: '/'
-    run: no
+    run: yes
 
   plugins:
     jshint:
