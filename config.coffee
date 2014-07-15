@@ -5,7 +5,7 @@ path = require 'path'
 
 exports.config =
 
-  path:
+  paths:
   	watched: ['app']
 
   files:
