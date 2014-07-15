@@ -1,1 +1,1 @@
-web: brunch watch -s
+web: npm start
