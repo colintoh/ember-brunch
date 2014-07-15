@@ -53,6 +53,8 @@ Build a production folder:
 
 Your app will be compiled and minified into the  ```public``` folder. Upload that folder to any host(S3 etc) and you are done!
 
+Heroku version: [http://ancient-atoll-5869.herokuapp.com](http://ancient-atoll-5869.herokuapp.com/home)
+
 #Need a server?
 Go to ```config.coffee``` and switch on the server by setting ```run: yes```. It will run a express server. Set your port number accordingly.
 
