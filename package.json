@@ -16,7 +16,6 @@
 
   },
   "dependencies": {
-  	"brunch":"*",
   	"express": "*",
     "javascript-brunch": "~1.7.0",
     "stylus-brunch": "1.6.1",
