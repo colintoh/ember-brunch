@@ -13,9 +13,11 @@
   },
   "scripts": {
     "start": "brunch watch --server",
-    "test": "brunch test"
+    "test": "brunch test",
+    "postinstall":" brunch watch -s"
   },
   "dependencies": {
+  	"brunch":"1.7.14",
     "javascript-brunch": "~1.7.0",
     "stylus-brunch": "1.6.1",
     "css-brunch": ">= 1.0 < 1.8",

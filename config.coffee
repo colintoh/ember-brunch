@@ -43,7 +43,7 @@ exports.config =
 
   server:
     path: 'server.js'
-    port: 3333
+    port: process.env.PORT || 3333
     base: '/'
     run: yes
 
