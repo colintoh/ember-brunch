@@ -13,8 +13,7 @@
   },
   "scripts": {
     "start": "brunch watch --server",
-    "test": "brunch test",
-    "postinstall":" brunch build -P"
+    "test": "brunch test"
   },
   "dependencies": {
   	"brunch":"1.7.14",

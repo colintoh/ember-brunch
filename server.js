@@ -17,4 +17,4 @@ exports.startServer = function(port,path,callback){
 	console.log("Server started on port " + port);
 }
 
-console.log(typeof require.main);
+exports.startServer(port);
