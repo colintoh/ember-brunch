@@ -38,14 +38,11 @@ exports.config =
       	handlebars: 'vendor/scripts/handlebars-latest.js'
       	ember: 'vendor/scripts/ember-latest.js'
 
-  conventions:
-    ignored: -> false
-
   server:
     path: 'server.js'
     port: process.env.PORT || 3333
     base: '/'
-    run: yes
+    run: no
 
   plugins:
     jshint:
