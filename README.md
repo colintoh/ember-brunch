@@ -53,7 +53,7 @@ Build a production folder:
 
 Your app will be compiled and minified into the  ```public``` folder. Upload that folder to any host(S3 etc) and you are done!
 
-Heroku version: [http://ancient-atoll-5869.herokuapp.com](http://ancient-atoll-5869.herokuapp.com/home) You will need to remove ```public``` folder from the gitignore folder.
+Heroku version: [http://ancient-atoll-5869.herokuapp.com](http://ancient-atoll-5869.herokuapp.com/home) You will need to remove ```public``` folder from the gitignore folder. Uncomment out the ```server``` property in config.coffee.
 
 #Autolocation
 
