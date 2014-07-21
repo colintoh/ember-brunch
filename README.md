@@ -61,6 +61,8 @@ Autolocation is switched on by default in ```app > router.js```. Ember.Autolocat
 
 Modern browser will render ```localhost:3333/home``` instead of ```localhost:3333/#/home```.
 
+The only problem with this pretty url is that once user bookmark and visit this page again, the page will not exist because there is no actual ```Home``` resource. To solve this, you will need to run a server and redirect them to the root path. Read ```server.js``` to find out more.
+
 More Info here: [Ember.Autolocation](http://emberjs.com/api/classes/Ember.AutoLocation.html)
 
 
@@ -69,11 +71,11 @@ File Structure
 
 The ```app``` folder stores all file that you will need to start the project. ```app/helper``` stores all your controller+view files. ```app/templates``` and ```app/styles``` stores your handlebars templates and css respectively.
 
-```templates.js``` and ```helper.js``` contains all the files that you want your projects to import in when the server runs. And lastly, ```router.js``` is where you configure your routing.
+```initialize.js``` is where you import the templates, helpers, router and application modules. ```router.js``` is where you configure your routing.
 
 Generate scaffold
 ==================
-Without generators, you will have to manually type in alot of repetitive code. With the node module ```scaffolt```, you can easily generate controllers, views and template files and append them to the ```templates.js``` and ```helper.js``` files.
+Without generators, you will have to manually type in alot of repetitive code. With the node module ```scaffolt```, you can easily generate controllers, views and template files.
 
 Let's create a **recipe** controller, view and template with the **class** generator.
 Inside your application root directory, type ```scaffolt class recipe``` in your terminal. This will generate:
