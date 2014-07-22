@@ -31,7 +31,7 @@
     "grunt-groundskeeper": "~0.1.6",
     "javascript-brunch": "~1.7.0",
     "jshint-brunch": "1.5.1",
-    "stylus-brunch": "1.6.1",
+    "stylus-brunch": "1.8.1",
     "uglify-js-brunch": "~1.7.3"
   },
   "devDependencies": {}
