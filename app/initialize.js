@@ -1,12 +1,12 @@
 window.App = require('app');
 
 var regString,
-		excludeString,
-		fileList = window.require.list();
+	excludeString,
+	fileList = window.require.list();
 
 var requireOrder = {
 	helpers: [
-		'home' //Example: helpers/include home.js first
+		'application', // Always include application helper first
 	],
 	templates: [
 	]
@@ -15,7 +15,7 @@ var requireOrder = {
 var folderOrder = ['helpers', 'templates'];
 
 folderOrder.forEach(function(folder){
-	
+
 	//Require before
 	requireOrder[folder].forEach(function(module){
 		require( folder + '/' + module);
@@ -26,7 +26,7 @@ folderOrder.forEach(function(folder){
 	regString = '^'+folder+'/(?!' + excludeString + '$)';
 	fileList.filter(function(module){
 		return new RegExp(regString).test(module);
-	}).forEach(function(module){	
+	}).forEach(function(module){
 		require(module);
 	});
 
