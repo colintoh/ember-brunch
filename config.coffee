@@ -11,7 +11,7 @@ exports.config =
       defaultExtension: 'js',
       joinTo:
         'javascripts/app.js': /^app/
-        'javascripts/vendor.js': /^vendor/
+        'javascripts/vendor.js': /^vendor\/(?!node)/
 
       order:
         before: [
@@ -26,7 +26,7 @@ exports.config =
       defaultExtension: 'css'
       joinTo: 'stylesheets/app.css'
       order:
-        before: ['vendor/styles/bootstrap.css']
+        before: ['vendor/styles/bootstrap.cs']
 
     templates:
       precompile: true
