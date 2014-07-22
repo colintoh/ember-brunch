@@ -10,28 +10,29 @@
   },
   "engines": {
     "node": "~0.11.9",
-    "npm":"1.1.x"
+    "npm": "1.1.x"
   },
-  "scripts":{
-  	"postinstall": "grunt production"
+  "scripts": {
+    "postinstall": "brunch build -P"
   },
   "dependencies": {
-  	"brunch":"*",
-  	"express": "*",
-    "javascript-brunch": "~1.7.0",
-    "stylus-brunch": "1.6.1",
+    "auto-reload-brunch": "<=1.5",
+    "brunch": "*",
+    "clean-css-brunch": "~1.7.1",
+    "compression": "^1.0.9",
     "css-brunch": ">= 1.0 < 1.8",
     "ember-precompiler-brunch": "1.5.1",
-    "uglify-js-brunch": "~1.7.3",
-    "clean-css-brunch": "~1.7.1",
-    "jshint-brunch": "1.5.1",
-    "auto-reload-brunch": "<=1.5",
-    "grunt-groundskeeper": "~0.1.6",
+    "express": "*",
     "grunt-cli": "0.1.11",
-    "grunt-exec": "~0.4.2",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-compress": "~0.5.2",
-    "grunt-contrib-rename": "0.0.3"
+    "grunt-contrib-rename": "0.0.3",
+    "grunt-exec": "~0.4.2",
+    "grunt-groundskeeper": "~0.1.6",
+    "javascript-brunch": "~1.7.0",
+    "jshint-brunch": "1.5.1",
+    "stylus-brunch": "1.6.1",
+    "uglify-js-brunch": "~1.7.3"
   },
   "devDependencies": {}
 }
