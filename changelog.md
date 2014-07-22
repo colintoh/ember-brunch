@@ -1,5 +1,10 @@
 Change Log
 ==========
+##0.4.0
+ - Add ordering of helper and templates files
+ - Add clustering to server to make use of all 4 cores of a single Heroku dynos
+ - Add compression to the express server
+
 ##0.3.0
  - Update Brunch to 1.7.14
  - Update Ember to 1.6.0 version

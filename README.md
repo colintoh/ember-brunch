@@ -46,14 +46,21 @@ Build + optimized + gzip:
 ```grunt production```
 
 
-Deployment
+Static Deployment
 ===========
 Build a production folder:
 ```brunch b -P```
 
 Your app will be compiled and minified into the  ```public``` folder. Upload that folder to any host(S3 etc) and you are done!
 
-Heroku version: [http://ancient-atoll-5869.herokuapp.com](http://ancient-atoll-5869.herokuapp.com/home) You will need to remove ```public``` folder from the gitignore folder. Uncomment out the ```server``` property in config.coffee.
+Heroku Deployment
+===========
+
+```server.js`` runs a express server with clustering that gzip your static files. Just push to heroku and it's done.
+
+Heroku version: [http://ancient-atoll-5869.herokuapp.com](http://ancient-atoll-5869.herokuapp.com/home)
+
+To enable server while developing, just uncomment the ```server``` property in config.coffee.
 
 #Autolocation
 
