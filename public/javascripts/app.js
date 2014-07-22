@@ -227,7 +227,7 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
   data.buffer.push("\n	    </div>\n    </div>\n\n</div>");
   return buffer;
-  
+
 });
 module.exports = module.id;
 });
@@ -239,8 +239,8 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   var buffer = '', stack1, helper, options, self=this, helperMissing=helpers.helperMissing;
 
 function program1(depth0,data) {
-  
-  
+
+
   data.buffer.push("Go to next page");
   }
 
@@ -250,7 +250,7 @@ function program1(depth0,data) {
   },hashTypes:{'classNames': "STRING"},hashContexts:{'classNames': depth0},inverse:self.noop,fn:self.program(1, program1, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "nextpage", options) : helperMissing.call(depth0, "linkTo", "nextpage", options));
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
   return buffer;
-  
+
 });
 module.exports = module.id;
 });
@@ -262,14 +262,14 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   var buffer = '', stack1, helper, options, self=this, helperMissing=helpers.helperMissing;
 
 function program1(depth0,data) {
-  
-  
+
+
   data.buffer.push("Go back to home page");
   }
 
 function program3(depth0,data) {
-  
-  
+
+
   data.buffer.push("Go to posts page");
   }
 
@@ -284,7 +284,7 @@ function program3(depth0,data) {
   },hashTypes:{'classNames': "STRING"},hashContexts:{'classNames': depth0},inverse:self.noop,fn:self.program(3, program3, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "posts", options) : helperMissing.call(depth0, "linkTo", "posts", options));
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
   return buffer;
-  
+
 });
 module.exports = module.id;
 });
@@ -296,20 +296,20 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   var buffer = '', stack1, helper, options, self=this, helperMissing=helpers.helperMissing;
 
 function program1(depth0,data) {
-  
-  
+
+
   data.buffer.push("\n      		<a href=\"#\"> Home</a>\n      	");
   }
 
 function program3(depth0,data) {
-  
-  
+
+
   data.buffer.push("\n      		<a href=\"#\"> NextPage</a>\n      	");
   }
 
 function program5(depth0,data) {
-  
-  
+
+
   data.buffer.push("\n      		<a href=\"#\"> Posts</a>\n      	");
   }
 
@@ -333,7 +333,7 @@ function program5(depth0,data) {
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
   data.buffer.push("\n    </ul>\n\n</div>\n\n");
   return buffer;
-  
+
 });
 module.exports = module.id;
 });
@@ -350,7 +350,7 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
   data.buffer.push("\n</p>\n\n");
   return buffer;
-  
+
 });
 module.exports = module.id;
 });
@@ -362,8 +362,8 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   var stack1, helper, options, self=this, helperMissing=helpers.helperMissing;
 
 function program1(depth0,data) {
-  
-  
+
+
   data.buffer.push("Create a post");
   }
 
@@ -372,7 +372,7 @@ function program1(depth0,data) {
   },hashTypes:{'classNames': "STRING"},hashContexts:{'classNames': depth0},inverse:self.noop,fn:self.program(1, program1, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "posts.new", options) : helperMissing.call(depth0, "linkTo", "posts.new", options));
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
   else { data.buffer.push(''); }
-  
+
 });
 module.exports = module.id;
 });
@@ -384,8 +384,8 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   var buffer = '', stack1, helper, options, self=this, helperMissing=helpers.helperMissing;
 
 function program1(depth0,data) {
-  
-  
+
+
   data.buffer.push("Back to Posts page");
   }
 
@@ -395,7 +395,7 @@ function program1(depth0,data) {
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
   data.buffer.push("\n\n\n");
   return buffer;
-  
+
 });
 module.exports = module.id;
 });
