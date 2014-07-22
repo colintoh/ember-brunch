@@ -60,8 +60,6 @@ Heroku Deployment
 
 Heroku version: [http://ancient-atoll-5869.herokuapp.com](http://ancient-atoll-5869.herokuapp.com/home)
 
-To enable server while developing, just uncomment the ```server``` property in config.coffee.
-
 #Autolocation
 
 Autolocation is switched on by default in ```app > router.js```. Ember.Autolocation will detect your browser support and switch your URL appearance.
