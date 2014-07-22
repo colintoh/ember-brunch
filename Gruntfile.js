@@ -58,7 +58,6 @@ module.exports = function (grunt) {
     'clean',
     'exec:brunchBuildOptimize',
     'groundskeeper',
-    'groundskeeper',
     'compress',
     'rename'
   ]);
