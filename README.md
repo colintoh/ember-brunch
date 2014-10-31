@@ -1,7 +1,7 @@
 Ember-Brunch
 ============
 
-Ember-Brunch embodies [modern web development workflow](http://www.youtube.com/watch?v=vDbbz-BdyYc) with the help of brunch.io and the ember.js framework. Having a awesome development workflow is important because you want to:
+Ember-Brunch embodies [modern web development workflow](http://www.youtube.com/watch?v=vDbbz-BdyYc) with the help of brunch.io and the ember.js framework. Having an awesome development workflow is important because you wants to:
 
 - ***Reduce*** development time.
 - ***Reduce*** bugs.
@@ -9,11 +9,11 @@ Ember-Brunch embodies [modern web development workflow](http://www.youtube.com/w
 
 What ***Ember-Brunch*** can do for you:
 
-- Organize your javascript files into modules.
-- Prevent pollution of the global scope.
+- Organizes your javascript files into modules.
+- Prevents pollution of the global scope.
 - Front-end MVC framework.
-- Auto-detect and prompt JS errors the very moment you save the files.
-- Auto-reload the browser everytime you save the files.
+- Auto-detects and prompts JS errors after you save the files.
+- Auto-reload the browser.
 - A buffet selection of preprocessors to save development time: LESS, STYLUS, JADE, TYPESCRIPT etc...
 - Build a production-ready app with just a single command and be ready to deploy.
 
