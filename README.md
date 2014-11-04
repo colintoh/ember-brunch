@@ -21,9 +21,11 @@ What ***Ember-Brunch*** can do for you:
 Dependencies:
 
   - Install Node.js: http://nodejs.org/download/
-  - Install Brunch 1.7.10 : ``` npm install -g brunch@1.7.10```
+  - Install Brunch: ``` npm install -g brunch```
+  - Install Bower:  ``` npm install -g bower```
   - Install command line tool from XCode
   - Install scaffolt if you want to use generator: *(Optional but highly recommended)* ``` npm install -g scaffolt```
+  - Run ```bower install && npm install``` to install all dependencies
 
 Getting Started
 ===========
@@ -42,7 +44,7 @@ Build a non-optimized version:
 Build and optimized(minify):
 ```brunch b -P```
 
-Build + optimized + gzip:
+Clean + Build + optimized:
 ```grunt production```
 
 
