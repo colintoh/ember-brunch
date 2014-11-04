@@ -11,22 +11,16 @@ exports.config =
       defaultExtension: 'js',
       joinTo:
         'javascripts/app.js': /^app/
-        'javascripts/vendor.js': /^vendor\/(?!node)/
-
-      order:
-        before: [
-          'vendor/scripts/console-helper.js',
-          'vendor/scripts/jquery-latest.js',
-          'vendor/scripts/handlebars-latest.js',
-          'vendor/scripts/ember-latest.js',
-          'vendor/scripts/bootstrap.js',
-          ]
+        'javascripts/vendor.js': /^(bower_components|vendor)/
 
     stylesheets:
       defaultExtension: 'css'
       joinTo: 'stylesheets/app.css'
       order:
-        before: ['vendor/styles/bootstrap.css']
+        before: [
+          'vendor/styles/bootstrap.css',
+          'bower_components/js-mobile-console/style/mobile-console.css'
+        ]
 
     templates:
       precompile: true
@@ -34,9 +28,9 @@ exports.config =
       defaultExtension: 'hbs'
       joinTo: 'javascripts/app.js' : /^app/
       paths:
-      	jquery: 'vendor/scripts/jquery-latest.js'
-      	handlebars: 'vendor/scripts/handlebars-latest.js'
-      	ember: 'vendor/scripts/ember-latest.js'
+      	jquery: 'bower_components/jquery/dist/jquery.js'
+      	handlebars: 'bower_components/handlebars/handlebars.js'
+      	ember: 'bower_components/ember/ember.js'
 
   plugins:
     jshint:
