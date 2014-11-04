@@ -54,9 +54,7 @@ module.exports = function (grunt) {
   grunt.registerTask('production',[
     'clean',
     'exec:brunchBuildOptimize',
-    'groundskeeper',
-    'compress',
-    'rename'
+    'groundskeeper'
   ]);
 
 };
