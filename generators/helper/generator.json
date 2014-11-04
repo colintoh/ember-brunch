@@ -3,11 +3,6 @@
     {
       "from": "helper.js.hbs",
       "to": "app/helpers/{{name}}.js"
-    },
-    {
-    	"from": "insertHelper.js.hbs",
-    	"to": "app/helper.js",
-    	"method": "append"
     }
   ],
   "dependencies": []

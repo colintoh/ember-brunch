@@ -11,13 +11,13 @@ exports.config =
       defaultExtension: 'js',
       joinTo:
         'javascripts/app.js': /^app/
-        'javascripts/vendor.js': /^vendor/
+        'javascripts/vendor.js': /^vendor\/(?!node)/
 
       order:
         before: [
           'vendor/scripts/console-helper.js',
-          'vendor/scripts/jquery-1.9.1.js',
-          'vendor/scripts/handlebars-1.0.js',
+          'vendor/scripts/jquery-latest.js',
+          'vendor/scripts/handlebars-latest.js',
           'vendor/scripts/ember-latest.js',
           'vendor/scripts/bootstrap.js',
           ]
@@ -33,15 +33,11 @@ exports.config =
       root: 'templates'
       defaultExtension: 'hbs'
       joinTo: 'javascripts/app.js' : /^app/
-
-  conventions:
-    ignored: -> false
+      paths:
+      	jquery: 'vendor/scripts/jquery-latest.js'
+      	handlebars: 'vendor/scripts/handlebars-latest.js'
+      	ember: 'vendor/scripts/ember-latest.js'
 
   plugins:
     jshint:
       pattern: /^app\/.*\.js$/
-
-  server:
-    port: 3333
-    base: '/'
-    run: no

@@ -1,7 +1,7 @@
 Ember-Brunch
 ============
 
-Ember-Brunch embodies [modern web development workflow](http://www.youtube.com/watch?v=vDbbz-BdyYc) with the help of brunch.io and the ember.js framework. Having a awesome development workflow is important because you want to:
+Ember-Brunch embodies [modern web development workflow](http://www.youtube.com/watch?v=vDbbz-BdyYc) with the help of brunch.io and the ember.js framework. Having an awesome development workflow is important because you wants to:
 
 - ***Reduce*** development time.
 - ***Reduce*** bugs.
@@ -9,11 +9,11 @@ Ember-Brunch embodies [modern web development workflow](http://www.youtube.com/w
 
 What ***Ember-Brunch*** can do for you:
 
-- Organize your javascript files into modules.
-- Prevent pollution of the global scope.
+- Organizes your javascript files into modules.
+- Prevents pollution of the global scope.
 - Front-end MVC framework.
-- Auto-detect and prompt JS errors the very moment you save the files.
-- Auto-reload the browser everytime you save the files.
+- Auto-detects and prompts JS errors after you save the files.
+- Auto-reload the browser.
 - A buffet selection of preprocessors to save development time: LESS, STYLUS, JADE, TYPESCRIPT etc...
 - Build a production-ready app with just a single command and be ready to deploy.
 
@@ -46,12 +46,29 @@ Build + optimized + gzip:
 ```grunt production```
 
 
-Deployment
+Static Deployment
 ===========
 Build a production folder:
 ```brunch b -P```
 
 Your app will be compiled and minified into the  ```public``` folder. Upload that folder to any host(S3 etc) and you are done!
+
+Heroku Deployment
+===========
+
+```server.js`` runs a express server with clustering that gzip your static files. Just push to heroku and it's done.
+
+Heroku version: [http://ancient-atoll-5869.herokuapp.com](http://ancient-atoll-5869.herokuapp.com/home)
+
+#Autolocation
+
+Autolocation is switched on by default in ```app > router.js```. Ember.Autolocation will detect your browser support and switch your URL appearance.
+
+Modern browser will render ```localhost:3333/home``` instead of ```localhost:3333/#/home```.
+
+The only problem with this pretty url is that once user bookmark and visit this page again, the page will not exist because there is no actual ```Home``` resource. To solve this, you will need to run a server and redirect them to the root path. Read ```server.js``` to find out more.
+
+More Info here: [Ember.Autolocation](http://emberjs.com/api/classes/Ember.AutoLocation.html)
 
 
 File Structure
@@ -59,11 +76,11 @@ File Structure
 
 The ```app``` folder stores all file that you will need to start the project. ```app/helper``` stores all your controller+view files. ```app/templates``` and ```app/styles``` stores your handlebars templates and css respectively.
 
-```templates.js``` and ```helper.js``` contains all the files that you want your projects to import in when the server runs. And lastly, ```router.js``` is where you configure your routing.
+```initialize.js``` is where you import the templates, helpers, router and application modules. ```router.js``` is where you configure your routing.
 
 Generate scaffold
 ==================
-Without generators, you will have to manually type in alot of repetitive code. With the node module ```scaffolt```, you can easily generate controllers, views and template files and append them to the ```templates.js``` and ```helper.js``` files.
+Without generators, you will have to manually type in alot of repetitive code. With the node module ```scaffolt```, you can easily generate controllers, views and template files.
 
 Let's create a **recipe** controller, view and template with the **class** generator.
 Inside your application root directory, type ```scaffolt class recipe``` in your terminal. This will generate:

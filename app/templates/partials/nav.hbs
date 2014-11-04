@@ -1,0 +1,20 @@
+<div class="navbar navbar-default">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">{{title}}</a>
+  </div>
+
+
+    <ul class="nav navbar-nav">
+      	{{#linkTo 'home' tagName="li"}}
+      		<a href="#"> Home</a>
+      	{{/linkTo}}
+      	{{#linkTo 'nextpage' tagName="li"}}
+      		<a href="#"> NextPage</a>
+      	{{/linkTo}}
+      	{{#linkTo 'posts.index' tagName="li"}}
+      		<a href="#"> Posts</a>
+      	{{/linkTo}}
+    </ul>
+
+</div>
+
