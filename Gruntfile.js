@@ -1,12 +1,9 @@
 module.exports = function (grunt) {
 
 
-  // Get path to core grunt dependencies from Sails
-  grunt.loadNpmTasks('grunt-exec');
-  grunt.loadNpmTasks('grunt-groundskeeper');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-compress');
-  grunt.loadNpmTasks('grunt-contrib-rename');
+  // Get path to core grunt dependencies
+
+  require('matchdep').filter('grunt-*').forEach(grunt.loadNpmTasks);
 
 
   // Project configuration.
