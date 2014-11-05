@@ -14,8 +14,6 @@
     "tests"
   ],
   "dependencies": {
-    "moment": "*",
-    "js-mobile-console": "*",
     "jquery": "1.11.1",
     "ember": "~1.8.0",
     "bootstrap": "~3.3.0",

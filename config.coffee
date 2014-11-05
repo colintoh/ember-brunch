@@ -18,7 +18,7 @@ exports.config =
       joinTo: 'stylesheets/app.css'
       order:
         before: [
-          'vendor/styles/bootstrap.css',
+          'bower_components/bootstrap/dist/css/bootstrap.css',
           'bower_components/js-mobile-console/style/mobile-console.css'
         ]
 
