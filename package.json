@@ -13,6 +13,7 @@
     "npm": "1.1.x"
   },
   "scripts": {
+    "start": "bower install && npm install",
     "postinstall": "bower install && grunt production"
   },
   "dependencies": {
