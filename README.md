@@ -25,7 +25,7 @@ Dependencies:
   - Install Bower:  ``` npm install -g bower```
   - Install command line tool from XCode
   - Install scaffolt if you want to use generator: *(Optional but highly recommended)* ``` npm install -g scaffolt```
-  - Run ```bower install && npm install``` to install all dependencies
+  - Run ```npm start``` to install all dependencies
 
 Getting Started
 ===========
