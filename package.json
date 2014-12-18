@@ -39,7 +39,8 @@
     "uglify-js-brunch": "~1.7.3"
   },
   "devDependencies": {
-    "karma": "*",
-    "karma-qunit": "*"
+    "karma": "~0.12.28",
+    "karma-qunit": "~0.1.4",
+    "karma-phantomjs-launcher": "~0.1.4"
   }
 }
