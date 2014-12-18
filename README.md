@@ -117,6 +117,14 @@ In your ```router.js``` file, manually append your recipe route:
 Enter ```localhost:[port-number]/#/recipe``` and you will see your new changes.
 
 
+Testing
+===========
+
+- Install Node.js: http://nodejs.org/download/
+- Install Brunch: ``` npm install -g brunch```
+- Install Bower:  ``` npm install -g bower```
+- Install command line tool from XCode
+
 Want to know more about Brunch and Ember?
 =================================
 
