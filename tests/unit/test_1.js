@@ -3,5 +3,5 @@ test('title can be updated in home controller', function(){
     title: 'This is a home view'
   });
   home.updateTitle();
-  equal(home.get('title'), 'THIS IS A HOME VIEW', '');
+  equal(home.get('title'), 'THIS IS A HOME VIEW.', '');
 });

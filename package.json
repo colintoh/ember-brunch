@@ -14,8 +14,7 @@
   },
   "scripts": {
     "start": "npm install",
-    "postinstall": "bower install && grunt production",
-    "test": "./node_modules/karma/bin/karma start"
+    "postinstall": "bower install && grunt production"
   },
   "dependencies": {
     "auto-reload-brunch": "<=1.5",

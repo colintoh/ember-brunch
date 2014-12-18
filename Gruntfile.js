@@ -15,7 +15,13 @@ module.exports = function (grunt) {
       },
       brunchBuildOptimize: {
         command: 'brunch b -P'
-      }
+      },
+      qunitUnitTest: {
+        command: './node_modules/karma/bin/karma start test.unit.js'
+      },
+      qunitIntegrationTest: {
+        command: './node_modules/karma/bin/karma start test.integration.js'
+      },
     },
     groundskeeper: {
       compile: {
@@ -56,6 +62,14 @@ module.exports = function (grunt) {
     'clean',
     'exec:brunchBuildOptimize',
     'groundskeeper'
+  ]);
+
+  grunt.registerTask('test-unit',[
+    'exec:qunitUnitTest'
+  ]);
+
+  grunt.registerTask('test-integration',[
+    'exec:qunitIntegrationTest'
   ]);
 
 };
