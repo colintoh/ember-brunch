@@ -14,7 +14,8 @@
   },
   "scripts": {
     "start": "npm install",
-    "postinstall": "bower install && grunt production"
+    "postinstall": "bower install && grunt production",
+    "test": "./node_modules/karma/bin/karma start"
   },
   "dependencies": {
     "auto-reload-brunch": "<=1.5",
@@ -38,5 +39,8 @@
     "stylus-brunch": "1.8.1",
     "uglify-js-brunch": "~1.7.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "karma": "*",
+    "karma-qunit": "*"
+  }
 }
