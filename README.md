@@ -62,7 +62,7 @@ Heroku Deployment
 
 Heroku version: [http://ancient-atoll-5869.herokuapp.com](http://ancient-atoll-5869.herokuapp.com/home)
 
-#Autolocation
+<!-- #Autolocation
 
 Autolocation is switched on by default in ```app > router.js```. Ember.Autolocation will detect your browser support and switch your URL appearance.
 
@@ -70,7 +70,7 @@ Modern browser will render ```localhost:3333/home``` instead of ```localhost:333
 
 The only problem with this pretty url is that once user bookmark and visit this page again, the page will not exist because there is no actual ```Home``` resource. To solve this, you will need to run a server and redirect them to the root path. Read ```server.js``` to find out more.
 
-More Info here: [Ember.Autolocation](http://emberjs.com/api/classes/Ember.AutoLocation.html)
+More Info here: [Ember.Autolocation](http://emberjs.com/api/classes/Ember.AutoLocation.html) -->
 
 
 File Structure
@@ -121,10 +121,19 @@ Testing
 ===========
 
 - You may want to install ```karma-cli``` for convenience
-- Config test environment in ```tests/karma.conf.js```
-- Write test in folder ```tests```
-- For unit tests only: run ```grunt test-unit```
-- For integration tests only: run ```grunt test-integration```
+
+Write unit test in `test/unit`
+
+Write integration test in `test/integration`
+
+Run unit/integration test:
+
+`npm run-script unit/integration`
+
+For more resources on testing,
+
+- [Ember Testing](http://emberjs.com/guides/testing/)
+- [QUnit](http://qunitjs.com/)
 
 Want to know more about Brunch and Ember?
 =================================
