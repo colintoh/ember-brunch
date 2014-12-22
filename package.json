@@ -14,7 +14,9 @@
   },
   "scripts": {
     "start": "npm install",
-    "postinstall": "bower install && grunt production"
+    "postinstall": "bower install && grunt production",
+    "unit": "./node_modules/karma/bin/karma start karma-unit.conf.js",
+    "integration": "./node_modules/karma/bin/karma start karma-integration.conf.js"
   },
   "dependencies": {
     "auto-reload-brunch": "<=1.5",
@@ -40,7 +42,8 @@
   },
   "devDependencies": {
     "karma": "~0.12.28",
-    "karma-qunit": "~0.1.4",
-    "karma-phantomjs-launcher": "~0.1.4"
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-qunit": "~0.1.4"
   }
 }

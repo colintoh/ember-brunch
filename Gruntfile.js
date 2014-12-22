@@ -8,20 +8,17 @@ module.exports = function (grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    clean :["public/images","public/fonts","public/javascripts","public/stylesheets"],
+    clean : {
+      folder: ["public/*"],
+      js: ["public/javascripts/integration-test.js","public/javascripts/unit-test.js"]
+    },
     exec: {
       brunchBuild: {
         command: 'brunch b'
       },
       brunchBuildOptimize: {
         command: 'brunch b -P'
-      },
-      qunitUnitTest: {
-        command: './node_modules/karma/bin/karma start test.unit.js'
-      },
-      qunitIntegrationTest: {
-        command: './node_modules/karma/bin/karma start test.integration.js'
-      },
+      }
     },
     groundskeeper: {
       compile: {
@@ -59,17 +56,10 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('production',[
-    'clean',
+    'clean:folder',
     'exec:brunchBuildOptimize',
+    'clean:js',
     'groundskeeper'
-  ]);
-
-  grunt.registerTask('test-unit',[
-    'exec:qunitUnitTest'
-  ]);
-
-  grunt.registerTask('test-integration',[
-    'exec:qunitIntegrationTest'
   ]);
 
 };
