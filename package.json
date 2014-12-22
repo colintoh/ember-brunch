@@ -23,7 +23,7 @@
     "clean-css-brunch": "~1.7.1",
     "compression": "^1.0.9",
     "css-brunch": ">= 1.0 < 1.8",
-    "ember-precompiler-brunch": "1.5.1",
+    "ember-handlebars-brunch": "^1.2.0",
     "express": "*",
     "grunt": "^0.4.5",
     "grunt-cli": "~0.1.13",
