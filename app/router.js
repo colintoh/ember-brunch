@@ -1,6 +1,3 @@
-var App = require('app');
-
-
 App.IndexRoute = Em.Route.extend({
     redirect:function(){
         this.transitionTo('home');
@@ -17,5 +14,8 @@ App.Router.map(function(){
 });
 
 App.Router.reopen({
-	location: 'auto'
+    init: function(){
+        this.set('rootURL', window.location.pathname);
+        this._super();
+    }
 });
