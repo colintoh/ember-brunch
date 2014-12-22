@@ -12,15 +12,16 @@ exports.config =
       joinTo:
         'javascripts/app.js': /^app/
         'javascripts/vendor.js': /^(bower_components|vendor)/
-        'javascripts/unit-test.js': /^test\/unit|test\/helpers.js/
-        'javascripts/integration-test.js': /^test\/integration|test\/helpers.js/
+        'javascripts/unit-test.js': /^test\/unit|test\/unit-helper.js/
+        'javascripts/integration-test.js': /^test\/integration|test\/integration-helper.js/
       order:
         before: [
           'app/initialize.js'
           'app/router.js'
           'app/helpers/*.js'
           'app/templates/*.js'
-          'test/helpers.js'
+          'test/unit-helper.js'
+          'test/integration-helper.js'
         ]
 
     stylesheets:
