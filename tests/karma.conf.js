@@ -1,12 +1,12 @@
-module.exports = function(karma) {
+module.exports = function(karma, type) {
   karma.set({
-    basePath: '',
+    basePath: './',
       
     files: [
       "public/javascripts/vendor.js",
       "public/javascripts/app.js",
       "tests/helpers.js",
-      "tests/demo/*_tests.js"
+      "tests/" + type + "/*.js"
     ],
 
     logLevel: karma.LOG_ERROR,

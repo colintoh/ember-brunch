@@ -120,10 +120,11 @@ Enter ```localhost:[port-number]/#/recipe``` and you will see your new changes.
 Testing
 ===========
 
-- Install if needed ```npm install karma-phantomjs-launcher```
-- Config your test files in ```karma.conf.js```
+- You may want to install ```karma-cli``` for convenience
+- Config test environment in ```tests/karma.conf.js```
 - Write test in folder ```tests```
-- Run ```npm test```
+- For unit tests only: run ```grunt test-unit```
+- For integration tests only: run ```grunt test-integration```
 
 Want to know more about Brunch and Ember?
 =================================

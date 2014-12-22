@@ -6,13 +6,13 @@ App.setupForTesting();
 App.injectTestHelpers();
 
 module('Integration tests', {
-    setup: function(){
-        Ember.run(App, App.advanceReadiness);
-    },
+  setup: function(){
+    Ember.run(App, App.advanceReadiness);
+  },
 
-    teardown: function(){
-        App.reset();
-    }
+  teardown: function(){
+    App.reset();
+  }
 });
 
 function exists(selector){
