@@ -1,5 +1,3 @@
-var App = require('app');
-
 App.PostsController = Em.Controller.extend({
 
 });

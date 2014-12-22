@@ -12,13 +12,23 @@ exports.config =
       joinTo:
         'javascripts/app.js': /^app/
         'javascripts/vendor.js': /^(bower_components|vendor)/
+        'javascripts/unit-test.js': /^test\/unit|test\/helpers.js/
+        'javascripts/integration-test.js': /^test\/integration|test\/helpers.js/
+      order:
+        before: [
+          'app/initialize.js'
+          'app/router.js'
+          'app/helpers/*.js'
+          'app/templates/*.js'
+          'test/helpers.js'
+        ]
 
     stylesheets:
       defaultExtension: 'css'
       joinTo: 'stylesheets/app.css'
       order:
         before: [
-          'bower_components/bootstrap/dist/css/bootstrap.css',
+          'bower_components/bootstrap/dist/css/bootstrap.css'
           'bower_components/js-mobile-console/style/mobile-console.css'
         ]
 
@@ -26,7 +36,7 @@ exports.config =
       precompile: true
       root: 'templates'
       defaultExtension: 'hbs'
-      joinTo: 'javascripts/app.js' : /^app/
+      joinTo: 'javascripts/templates.js' : /^app/
       paths:
       	jquery: 'bower_components/jquery/dist/jquery.js'
       	handlebars: 'bower_components/handlebars/handlebars.js'
@@ -35,3 +45,7 @@ exports.config =
   plugins:
     jshint:
       pattern: /^app\/.*\.js$/
+
+  modules:
+    definition: false
+    wrapper: false
